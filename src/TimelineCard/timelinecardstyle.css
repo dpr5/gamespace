@@ -1,0 +1,38 @@
+.timeline-card {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 5px 10px #d8d8d8;
+  margin: 10px;
+  border: 2px solid black;
+  width: 600px;
+}
+
+.card-header {
+  display: flex;
+  flex-direction: row;
+}
+
+.profile-picture {
+  margin: 5px;
+  border: 2px solid black;
+  width: 100px;
+  height: 100px;
+}
+
+.card-title {
+  margin: 5px;
+  border: 2px solid black;
+  width: 500px;
+}
+
+.timeline-card-content {
+  border: 2px solid black;
+  height: 300px;
+  margin: 5px;
+  width: 585px;
+}
+
+.timeline-card-footer {
+  display: flex;
+  flex-direction: row;
+}

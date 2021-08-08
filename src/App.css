@@ -1,5 +1,9 @@
 .App {
   text-align: center;
+  position: absolute;
+  top: 0px; /* Header Height */
+  bottom: 50px; /* Footer Height */
+  width: 100%;
 }
 
 .App-logo {
@@ -35,4 +39,26 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.content-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.content-left-bar-vertical {
+  border: 2px solid black;
+  flex-grow: 1;
+  background-color: rgb(202, 202, 202);
+}
+
+.content-right-bar-vertical {
+  border: 2px solid black;
+  flex-grow: 1;
+}
+.main-content-feed {
+  flex-grow: 2;
+  padding: 10px;
+  align-items: center;
+  border: 2px solid black;
 }
