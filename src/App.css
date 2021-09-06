@@ -44,21 +44,25 @@
 .content-container {
   display: flex;
   flex-direction: row;
+  height: 100%;
 }
 
 .content-left-bar-vertical {
   border: 2px solid black;
   flex-grow: 1;
   background-color: rgb(202, 202, 202);
+  height: 100%;
 }
 
 .content-right-bar-vertical {
   border: 2px solid black;
   flex-grow: 1;
+  height: 100%;
 }
 .main-content-feed {
   flex-grow: 2;
-  padding: 10px;
+
   align-items: center;
-  border: 2px solid black;
+  border-bottom: 2px solid black;
+  height: 100%;
 }

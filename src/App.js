@@ -1,6 +1,6 @@
 import "./App.css";
 import PrimarySearchAppBar from "./Header/Header";
-import { Route, Router, Switch } from "react-router-dom";
+import { Route, Switch, Redirect } from "react-router-dom";
 import About from "./About/About";
 import Home from "./Home/Home";
 import Users from "./Users/Users";
@@ -14,11 +14,14 @@ function App() {
         <div className="content-left-bar-vertical">nav bar</div>
         <div className="main-content-feed">
           <Switch>
-            <Route to="/" component={Home} />
+            <Route exact path="/">
+              <Redirect to="/home" />
+            </Route>
+            <Route exact path="/home" component={Home} />
 
-            <Route to="/about" component={About} />
+            <Route exact path="/about" component={About} />
 
-            <Route to="/users" component={Users} />
+            <Route exact path="/users" component={Users} />
           </Switch>
         </div>
         <div className="content-right-bar-vertical">Ad space</div>
