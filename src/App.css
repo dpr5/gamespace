@@ -48,14 +48,12 @@
 }
 
 .content-left-bar-vertical {
-  border: 2px solid black;
   flex-grow: 1;
-  background-color: rgb(202, 202, 202);
+
   height: 100%;
 }
 
 .content-right-bar-vertical {
-  border: 2px solid black;
   flex-grow: 1;
   height: 100%;
 }
@@ -63,6 +61,6 @@
   flex-grow: 2;
 
   align-items: center;
-  border-bottom: 2px solid black;
+
   height: 100%;
 }
