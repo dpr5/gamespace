@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import HeaderMenu from "./HeaderMenu";
+import React from "react";
+//import HeaderMenu from "./HeaderMenu";
 import { alpha, makeStyles } from "@material-ui/core/styles";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
@@ -9,7 +9,7 @@ import InputBase from "@material-ui/core/InputBase";
 import Badge from "@material-ui/core/Badge";
 import MenuItem from "@material-ui/core/MenuItem";
 import Menu from "@material-ui/core/Menu";
-import MenuIcon from "@material-ui/icons/Menu";
+//import MenuIcon from "@material-ui/icons/Menu";
 import SearchIcon from "@material-ui/icons/Search";
 import AccountCircle from "@material-ui/icons/AccountCircle";
 import MailIcon from "@material-ui/icons/Mail";
@@ -84,7 +84,7 @@ export default function PrimarySearchAppBar() {
   const classes = useStyles();
   const [anchorEl, setAnchorEl] = React.useState(null);
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
-  const [showMenuBar, setShowMenuBar] = useState(false);
+  //const [showMenuBar, setShowMenuBar] = useState(false);
   const isMenuOpen = Boolean(anchorEl);
   const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
 
@@ -162,6 +162,7 @@ export default function PrimarySearchAppBar() {
     </Menu>
   );
 
+  /*
   function openOrCloseNav() {
     if (showMenuBar === true) {
       setShowMenuBar(false);
@@ -170,11 +171,13 @@ export default function PrimarySearchAppBar() {
       setShowMenuBar(true);
     }
   }
-  const headerMenu = <HeaderMenu />;
+  
+  const headerMenu = <HeaderMenu />;*/
   return (
     <div className={classes.grow}>
       <AppBar position="static">
         <Toolbar>
+          {/*}
           <IconButton
             edge="start"
             className={classes.menuButton}
@@ -184,7 +187,7 @@ export default function PrimarySearchAppBar() {
           >
             <MenuIcon />
           </IconButton>
-
+  */}
           <Typography className={classes.title} variant="h6" noWrap>
             Game Space
           </Typography>
@@ -237,7 +240,7 @@ export default function PrimarySearchAppBar() {
           </div>
         </Toolbar>
       </AppBar>
-      {showMenuBar ? headerMenu : null}
+      {/*{showMenuBar ? headerMenu : null}*/}
       {renderMobileMenu}
       {renderMenu}
     </div>
